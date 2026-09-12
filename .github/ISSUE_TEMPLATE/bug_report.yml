@@ -1,0 +1,55 @@
+name: Bug report
+description: Report wiring, placement, performance or compatibility problems.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe what you expected and what you saw instead.
+    validations:
+      required: true
+  - type: input
+    id: game_version
+    attributes:
+      label: Game version
+      placeholder: "For example: Cities: Skylines II 1.6.0f1"
+    validations:
+      required: true
+  - type: input
+    id: mod_version
+    attributes:
+      label: Visible Utilities version
+      placeholder: "For example: 0.1.0-beta.2"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can we reproduce it?
+      description: Include the steps, district settings, and whether it happens after restarting.
+    validations:
+      required: true
+  - type: textarea
+    id: other_mods
+    attributes:
+      label: Other active mods, if relevant
+      description: List any mods you think may be related to the problem.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots
+      description: Attach a screenshot or link. For placement issues, include a close-up and a wider street view. For crashes, an error screenshot is useful.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, if available
+      description: Drag relevant logs here. Remove personal information before uploading.
+  - type: textarea
+    id: performance
+    attributes:
+      label: Performance details, if relevant
+      description: City population, district size, CPU/GPU/RAM and whether the slowdown continues after generation finishes.
